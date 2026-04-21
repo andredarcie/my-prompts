@@ -13,4 +13,3 @@ Prompts para tarefas cotidianas de desenvolvimento.
 | [debug.md](debug.md) | Diagnóstico e resolução de bugs |
 | [refactor.md](refactor.md) | Refatoração segura de código existente |
 | [tests.md](tests.md) | Geração de casos de teste |
-| [clean-code-review.md](clean-code-review.md) | Revisão de PR com princípios do Clean Code |
