@@ -19,7 +19,7 @@ Revise o código abaixo considerando:
 8. Testes: o que foi adicionado está testado? os testes cobrem edge cases e são legíveis sem lógica condicional?
 9. Complexidade: funções com muitos caminhos independentes (if/switch aninhados) que dificultam entendimento e teste?
 10. Observabilidade: erros logados com contexto suficiente para diagnosticar em produção?
-11. O que está bem e não precisa mudar
+11. Ignore o que está correto — liste apenas o que precisa mudar.
 
 Seja direto. Sem elogios genéricos.
 
