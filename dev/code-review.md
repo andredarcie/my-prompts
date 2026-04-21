@@ -14,7 +14,18 @@ Revise o código abaixo. Aponte:
 3. Problemas de performance ou segurança
 4. O que está bem e não precisa mudar
 
-Seja direto. Sem elogios genéricos. Priorize por impacto.
+Seja direto. Sem elogios genéricos.
+
+Ao final, liste todos os comentários ordenados do mais para o menos importante, no formato:
+
+| # | Gravidade | Comentário | Justificativa |
+|---|-----------|------------|---------------|
+| 1 | 🔴 Crítico | ... | ... |
+| 2 | 🟠 Alto    | ... | ... |
+| 3 | 🟡 Médio   | ... | ... |
+| 4 | 🔵 Baixo   | ... | ... |
+
+Gravidades: 🔴 Crítico (bug/segurança), 🟠 Alto (design/SOLID), 🟡 Médio (legibilidade/manutenção), 🔵 Baixo (estilo/sugestão).
 
 [COLE O CÓDIGO AQUI]
 ```
