@@ -13,7 +13,8 @@ Revise o código abaixo considerando:
 2. Problemas de performance ou segurança
 3. Violações de SOLID ou princípios de design
 4. Clean Code: nomes revelam intenção? funções fazem uma coisa só? sem side effects ocultos? sem null desnecessário? Lei de Demeter respeitada?
-5. O que está bem e não precisa mudar
+5. Object Calisthenics: um nível de indentação por função? sem else? sem primitivos expostos (wrap types)? coleções em classes próprias? sem getters/setters?
+6. O que está bem e não precisa mudar
 
 Seja direto. Sem elogios genéricos.
 
