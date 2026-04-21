@@ -15,7 +15,9 @@ Contexto:
 - Tipo de código: [ex: endpoint REST, worker assíncrono, script]
 - Ambiente: [ex: produção, alta carga, uso interno]
 
-Analise apenas o que foi alterado no diff abaixo considerando:
+Analise APENAS o que foi alterado no diff. Não comente código fora das linhas modificadas.
+
+Considere:
 1. Bugs ou edge cases não tratados
 2. Problemas de performance ou segurança
 3. SOLID: cada classe tem uma razão para mudar? aberta para extensão? subclasses substituem a base? interfaces coesas? dependências abstratas?
