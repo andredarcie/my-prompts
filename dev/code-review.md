@@ -16,7 +16,10 @@ Revise o código abaixo considerando:
 5. Clean Code: nomes revelam intenção? funções fazem uma coisa só? sem side effects ocultos? sem null desnecessário? Lei de Demeter respeitada?
 6. Object Calisthenics: um nível de indentação por função? sem else? sem primitivos expostos (wrap types)? coleções em classes próprias? sem getters/setters?
 7. Fail Fast: entradas validadas no início? falhas explícitas e imediatas?
-8. O que está bem e não precisa mudar
+8. Testes: o que foi adicionado está testado? os testes cobrem edge cases e são legíveis sem lógica condicional?
+9. Complexidade: funções com muitos caminhos independentes (if/switch aninhados) que dificultam entendimento e teste?
+10. Observabilidade: erros logados com contexto suficiente para diagnosticar em produção?
+11. O que está bem e não precisa mudar
 
 Seja direto. Sem elogios genéricos.
 
