@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% seo %}
+</head>
+<body>
+  <header class="page-header">
+    <h1 class="project-name"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+    <p class="project-tagline">{{ site.description }}</p>
+    <nav>
+      <a href="{{ '/dev/' | relative_url }}" class="btn">Dev</a>
+      <a href="{{ '/architecture/' | relative_url }}" class="btn">Architecture</a>
+      <a href="{{ '/best-practices/' | relative_url }}" class="btn">Best Practices</a>
+      <a href="https://github.com/{{ site.github.owner_name }}/{{ site.github.repository_name }}" class="btn">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <span class="site-footer-credits">
+      <a href="https://github.com/{{ site.github.owner_name }}/{{ site.github.repository_name }}">View on GitHub</a>
+    </span>
+  </footer>
+
+  <script>
+    document.querySelectorAll('pre code').forEach(function(block) {
+      var pre = block.parentElement;
+      var wrapper = document.createElement('div');
+      wrapper.className = 'code-wrapper';
+      pre.parentNode.insertBefore(wrapper, pre);
+      wrapper.appendChild(pre);
+
+      var btn = document.createElement('button');
+      btn.className = 'copy-btn';
+      btn.textContent = 'Copiar';
+      wrapper.appendChild(btn);
+
+      btn.addEventListener('click', function() {
+        var text = block.innerText;
+        navigator.clipboard.writeText(text).then(function() {
+          btn.textContent = 'Copiado!';
+          btn.classList.add('copied');
+          setTimeout(function() {
+            btn.textContent = 'Copiar';
+            btn.classList.remove('copied');
+          }, 2000);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

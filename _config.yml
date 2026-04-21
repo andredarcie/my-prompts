@@ -1,0 +1,16 @@
+title: My Prompts
+description: Prompts diretos para desenvolvimento de software, arquitetura e boas práticas.
+theme: jekyll-theme-cayman
+
+plugins:
+  - jekyll-relative-links
+  - jekyll-seo-tag
+
+relative_links:
+  enabled: true
+  collections: true
+
+include:
+  - dev
+  - architecture
+  - best-practices
