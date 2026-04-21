@@ -1,6 +1,8 @@
 title: My Prompts
 description: Prompts diretos para desenvolvimento de software, arquitetura e boas práticas.
 theme: jekyll-theme-cayman
+url: "https://andredarcie.github.io"
+baseurl: "/my-prompts"
 
 plugins:
   - jekyll-relative-links
